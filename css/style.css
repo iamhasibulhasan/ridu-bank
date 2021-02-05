@@ -1,0 +1,28 @@
+body{
+    padding: 100px;
+    font-family: 'Courier New', Courier, monospace
+}
+
+.submit-area{
+    margin-top: 50px;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+}
+#transition-area{
+    display: none;
+}
+.status{
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+.deposit{
+    background-color: slateblue;
+}
+.withdraw{
+    background-color: lightsalmon;
+}
+.balance{
+    background-color: orange;
+}
