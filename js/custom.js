@@ -9,10 +9,10 @@ document.getElementById("btn-enter").addEventListener("click", function(){
 document.getElementById("addDeposit").addEventListener("click", function(){
     var depositAmount = document.getElementById("depositAmount").value;
     var depositNumber = parseFloat(depositAmount);  //string to number conversion
-
+    document.getElementById("depositAmount").value = "";
     updateDeposit("currentBalance", depositNumber);
     updateDeposit("currentDeposit", depositNumber);
-
+    
 });
 // withdraw handler
 document.getElementById("subWithdraw").addEventListener("click", function(){
@@ -20,6 +20,8 @@ document.getElementById("subWithdraw").addEventListener("click", function(){
     var withdrawNumber = parseFloat(withdrawAmount);
     updateDeposit("currentWithdraw", withdrawNumber);
     updateWithdraw("currentBalance", withdrawNumber);
+
+    document.getElementById("withdrawAmount").value = "";
 });
     // update withdraw/balance function
     function updateWithdraw(id, withdraw){
